@@ -54,20 +54,33 @@ The design priorities were to keep everything as simple as possible by only usin
 
   The rest of this guide will assume you are using the Recommended method of installing Thonny, however I suggest you do both and then follow the Thonny guide.  
   
-    Once Thonny is installed we need to install the Modules that “Shooter” will need to run. 
+    Once Thonny is installed we need to install the Modules that “Shooter” 
+    will need to run. 
   
-    Sys Module – Allows “shooter” too easily talk to the Operating system and use its devices, “shooter” uses the Sys module too access user inputs. 
-    You're in luck if you installed python or thonny you already have Sys as it is a default python library.
+    Sys Module – Allows “shooter” too easily talk to the Operating system 
+    and use its devices, “shooter” uses the Sys module too access user inputs. 
+    You're in luck if you installed python or thonny you already have Sys 
+    as it is a default python library.
     
-    Random Module - Allows Shooter too generate Ranadom numbers for variables that are based on randomness
-    You're in luck if you installed python or thonny you already have Sys as it is a default python library.
+    Random Module - Allows Shooter too generate Ranadom numbers for variables 
+    that are based on randomness
+    You're in luck if you installed python or thonny you already have 
+    Sys as it is a default python library.
     
-    Pygame  Module – Adapts python too be a very easily used as a gaming development language. This is the base that “shooter” is almost entirely built on. 
-    Launch Thonny and then step through the first time setup process after that click on “Tools” in Thonny’s Toolbar a Drop down will appear then click on. “Manage plug-ins...”
+    Pygame  Module – Adapts python too be a very easily used as a 
+    gaming development language. This is the base that “shooter” is 
+    almost entirely built on. 
+    Launch Thonny and then step through the first time setup process 
+    after that click on “Tools” in Thonny’s Toolbar a Drop down will appear 
+    then click on. “Manage plug-ins...”
     
-    A window will appear titled “Thonny plug-ins” You will notice a search box inside that window. Click on it and type in “pygame” and then press the “Enter” key 
+    A window will appear titled “Thonny plug-ins” You will notice a search box inside 
+    that window. Click on it and type in “pygame” and then press the “Enter” key 
   
-    Under the Search box you should now see the Words pygame and under that information about the Pygame Module. In the lower left you will see an “install” button click on it and a dialogue box will appear and install pygame for you, when it finishes you will have successfully installed pygame. 
+    Under the Search box you should now see the Words pygame and under that 
+    information about the Pygame Module. In the lower left you will see an “install” 
+    button click on it and a dialogue box will appear and install pygame for you, 
+    when it finishes you will have successfully installed pygame. 
 
 ## Pseudo Code 
 
