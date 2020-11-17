@@ -54,60 +54,60 @@ The design priorities were to keep everything as simple as possible by only usin
 
   The rest of this guide will assume you are using the Recommended method of installing Thonny, however I suggest you do both and then follow the Thonny guide.  
   
-  Once Thonny is installed we need to install the Modules that “Shooter” will need to run. 
+    Once Thonny is installed we need to install the Modules that “Shooter” will need to run. 
   
-  Sys Module – Allows “shooter” too easily talk to the Operating system and use its devices, “shooter” uses the Sys module too access user inputs. 
+    Sys Module – Allows “shooter” too easily talk to the Operating system and use its devices, “shooter” uses the Sys module too access user inputs. 
     You're in luck if you installed python or thonny you already have Sys as it is a default python library.
     
-  Random Module - Allows Shooter too generate Ranadom numbers for variables that are based on randomness
+    Random Module - Allows Shooter too generate Ranadom numbers for variables that are based on randomness
     You're in luck if you installed python or thonny you already have Sys as it is a default python library.
     
-  Pygame  Module – Adapts python too be a very easily used as a gaming development language. This is the base that “shooter” is almost entirely built on. 
+    Pygame  Module – Adapts python too be a very easily used as a gaming development language. This is the base that “shooter” is almost entirely built on. 
     Launch Thonny and then step through the first time setup process after that click on “Tools” in Thonny’s Toolbar a Drop down will appear then click on. “Manage plug-ins...”
     
-  A window will appear titled “Thonny plug-ins” You will notice a search box inside that window. Click on it and type in “pygame” and then press the “Enter” key 
+    A window will appear titled “Thonny plug-ins” You will notice a search box inside that window. Click on it and type in “pygame” and then press the “Enter” key 
   
-  Under the Search box you should now see the Words pygame and under that information about the Pygame Module. In the lower left you will see an “install” button click on it and a dialogue box will appear and install pygame for you, when it finishes you will have successfully installed pygame. 
+    Under the Search box you should now see the Words pygame and under that information about the Pygame Module. In the lower left you will see an “install” button click on it and a dialogue box will appear and install pygame for you, when it finishes you will have successfully installed pygame. 
 
 ## Pseudo Code 
 
-Player 1’s sprite is loaded from a file named player1.png 
-Player 1’s variable coordinates equal X 100 and Y 100 
-Player 1’s size is set too equal X 80 and Y 60 Pixels 
-Player 1's image, Coordinates and Size are now equal too variable named player1Image  
+    Player 1’s sprite is loaded from a file named player1.png 
+    Player 1’s variable coordinates equal X 100 and Y 100 
+    Player 1’s size is set too equal X 80 and Y 60 Pixels 
+    Player 1's image, Coordinates and Size are now equal too variable named player1Image  
 
-The Targets sprite is loaded from a file named target.png 
-The Target sprite is given variable coordinates of X 500 and Y 500 
-The Targe is given the image size X 80 and Y 60 
-Variables size and coordinates and sprite are combined into one variable 
-Variable fireLock is set too equal 0 
+    The Targets sprite is loaded from a file named target.png 
+    The Target sprite is given variable coordinates of X 500 and Y 500 
+    The Targe is given the image size X 80 and Y 60 
+    Variables size and coordinates and sprite are combined into one variable 
+    Variable fireLock is set too equal 0 
 
-If the event MOUSEBUTTONDOWN is set, then
-    fireLock is changed too equal 1 
+    If the event MOUSEBUTTONDOWN is set, then
+        fireLock is changed too equal 1 
 
-Screen is drawn with colour black defined by RGB code 0,0,0
-    Variable mousePosition is pulled from Pygame 
-    Variable newXPosition is pulled from pygame and fit too screen dimensions 
-    Variable newYPosition is pulled from pygame and fit too screen dimensions 
-    Variable player1XY is set as equal to the variables newX and newY 
-    player1 sprite is now drawn with mousePosition pulled from above variable player1XY) 
-    Target sprite is now loaded with image at coordinates from variable TargetXY 
-    
-    if pygame detects that both sprites are equal to the same area and firelock is set too 1 then  
-    Target sprite will have a random new coordinate set 
-        and fireLock will be set back too 0 
+    Screen is drawn with colour black defined by RGB code 0,0,0
+        Variable mousePosition is pulled from Pygame 
+        Variable newXPosition is pulled from pygame and fit too screen dimensions 
+        Variable newYPosition is pulled from pygame and fit too screen dimensions 
+        Variable player1XY is set as equal to the variables newX and newY 
+        player1 sprite is now drawn with mousePosition pulled from above variable player1XY) 
+        Target sprite is now loaded with image at coordinates from variable TargetXY 
+
+       if pygame detects that both sprites are equal to the same area and firelock is set too 1 then  
+       Target sprite will have a random new coordinate set 
+            and fireLock will be set back too 0 
 
 ## Logical View
 
-    Insert Image Here
+   Insert Image Here
   
 ## Screenshots with Context
 
-    Insert Images here
+   Insert Images here
 
 ## Final Code
 
-    Insert Final Code here
+   Insert Final Code here
 
 ## Versioning
 
