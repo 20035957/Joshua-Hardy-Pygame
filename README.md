@@ -49,38 +49,29 @@ The design priorities were to keep everything as simple as possible by only usin
     apt install python3 (replace apt with your distros package manager.) 
 
 2. (Recommended) Python will also be installed alongside the Python IDE Thonny.
-  You can Download the latest stable version from the – Github Release page 
-  Or through your Linux package manager – apt install thonny 
+   You can Download the latest stable version from the – Github Release page 
+   Or through your Linux package manager – apt install thonny 
 
-  The rest of this guide will assume you are using the Recommended method of installing Thonny, however I suggest you do both and then follow the Thonny guide.  
+   The rest of this guide will assume you are using the Recommended method of installing Thonny, however I suggest you do both and then follow the Thonny guide.  
   
-    Once Thonny is installed we need to install the Modules that “Shooter” 
-    will need to run. 
+   Once Thonny is installed we need to install the Modules that “Shooter” 
+   will need to run. 
   
-    Sys Module – Allows “shooter” too easily talk to the Operating system 
-    and use its devices, “shooter” uses the Sys module too access user inputs. 
-    You're in luck if you installed python or thonny you already have Sys 
-    as it is a default python library.
+   Sys Module – Allows “shooter” too easily talk to the Operating system and use its devices, “shooter” uses the Sys module too access user inputs. 
+   You're in luck if you installed python or thonny you already have Sys as it is a default python library.
     
-    Random Module - Allows Shooter too generate Ranadom numbers for variables 
-    that are based on randomness
-    You're in luck if you installed python or thonny you already have 
-    Sys as it is a default python library.
+   Random Module - Allows Shooter too generate Ranadom numbers for variables that are based on randomness
+   You're in luck if you installed python or thonny you already have Sys as it is a default python library.
     
-    Pygame  Module – Adapts python too be a very easily used as a 
-    gaming development language. This is the base that “shooter” is 
-    almost entirely built on. 
-    Launch Thonny and then step through the first time setup process 
-    after that click on “Tools” in Thonny’s Toolbar a Drop down will appear 
-    then click on. “Manage plug-ins...”
+   Pygame  Module – Adapts python too be a very easily used as a gaming development language. This is the base that “shooter” is almost entirely built on. 
+   Launch Thonny and then step through the first time setup process after that click on “Tools” in Thonny’s Toolbar a Drop down will appear then click on. 
+   “Manage plug-ins...”
     
-    A window will appear titled “Thonny plug-ins” You will notice a search box inside 
-    that window. Click on it and type in “pygame” and then press the “Enter” key 
+   A window will appear titled “Thonny plug-ins” You will notice a search box inside that window. Click on it and type in “pygame” and then press the “Enter” key 
   
-    Under the Search box you should now see the Words pygame and under that 
-    information about the Pygame Module. In the lower left you will see an “install” 
-    button click on it and a dialogue box will appear and install pygame for you, 
-    when it finishes you will have successfully installed pygame. 
+   Under the Search box you should now see the Words pygame and under that information about the Pygame Module. 
+   In the lower left you will see an “install” button click on it and a dialogue box will appear and install pygame for you, 
+   when it finishes you will have successfully installed pygame. 
 
 ## Pseudo Code 
 
@@ -118,9 +109,65 @@ The design priorities were to keep everything as simple as possible by only usin
 
    Insert Images here
 
-## Final Code
+## Final Source Code
 
-   Insert Final Code here
+    import pygame
+    import sys
+    import random
+
+    pygame.init()
+    clock = pygame.time.Clock()
+    FPS = 60
+    SCREENSIZE = SCREENWIDTH, SCREENHEIGHT = 1000, 800
+    screen = pygame.display.set_mode(SCREENSIZE)
+
+    white = (255, 255, 255)
+    black = (0, 0, 0)
+    red = (255, 0, 0)
+    yellow = (255, 255, 0)
+    green = (0, 255, 0)
+
+    player1Image = pygame.image.load("player1.png")
+    player1XY = [100, 100]
+    player1ImageSizeXY = [80, 60]
+    player1Image = pygame.transform.scale(player1Image, player1ImageSizeXY)
+    fireLock = 0
+
+    target1Image = pygame.image.load("target1.png")
+    target1XY = [500, 500]
+    target1ImageSizeXY = target1ImageSizeX, target1ImageSizeY = 80, 60
+    target1Image = pygame.transform.scale(target1Image, target1ImageSizeXY)
+
+    pygame.mouse.set_visible(False)
+    gameState = "running"
+    while gameState != "exit":
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                gameState = "exit"
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                fireLock = 1
+
+            screen.fill(black)
+            mousePosition = pygame.mouse.get_pos()
+            newXPosition = mousePosition[0] - (player1ImageSizeXY[0] / 2)
+            newYPosition = mousePosition[1] - (player1ImageSizeXY[1] / 2)
+            player1XY = newXPosition, newYPosition
+            player1 = screen.blit(player1Image, player1XY)
+            target = screen.blit(target1Image, target1XY)
+
+            if player1.colliderect(target) and fireLock == 1:
+                #print("Hit!")
+                target1XY[0] = random.randint(0, (SCREENWIDTH - target1ImageSizeX))
+                target1XY[1] = random.randint(0, (SCREENHEIGHT - target1ImageSizeY))
+                fireLock = 0
+
+        pygame.display.flip()
+        clock.tick(FPS)
+
+    print("The game has closed")
+    pygame.quit()
+    sys.exit()
 
 ## Versioning
 
