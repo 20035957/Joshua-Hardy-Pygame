@@ -115,20 +115,35 @@ The design priorities were to keep everything as simple as possible by only usin
 ## 7. Screenshots with Context
 
    ![alt text](https://github.com/20035957/Joshua-Hardy-Pygame/blob/main/images/fig1.png?raw=true)
+   
    Fig1. Import as little modules too show pygame only functionality as much as possible.
+   
    ![alt text](https://github.com/20035957/Joshua-Hardy-Pygame/blob/main/images/fig2.png?raw=true)
+   
    fig2. Use basic Pygame Template model for easier readability and alteration and cross-compatibility with Pygame documentation. 
+   
    ![alt text](https://github.com/20035957/Joshua-Hardy-Pygame/blob/main/images/fig3.png?raw=true)
+   
    fig3. Compartmentalise Sections of Code for readability and easier alteration.
+   
    ![alt text](https://github.com/20035957/Joshua-Hardy-Pygame/blob/main/images/fig4.png?raw=true)
+   
    fig4. continue principles throughout script see fig3.
+   
    ![alt text](https://github.com/20035957/Joshua-Hardy-Pygame/blob/main/images/fig5.png?raw=true)
+   
    Fig5. Again, follow Pygame basic template and only break compartmentalisation principle when absolutely needed, fireLock = 1 is a variable for player 1 yet is    placed here because pygame.MOUSEBUTTONDOWN functions best here. 
+   
    ![alt text](https://github.com/20035957/Joshua-Hardy-Pygame/blob/main/images/fig6.png?raw=true)
+   
    fig6. player 1 code is written before target too keep with theme of player being defined before target this is done to keep things simple. Variables are always used whenever possible. Hardcoding can be simpler at times, but this script is designed to be living and evolving, Their fore Hardcoding should be avoided.
+   
    ![alt text](https://github.com/20035957/Joshua-Hardy-Pygame/blob/main/images/fig7.png?raw=true)
+   
    fig7. Here is an example of me not following my own lessons but for good reason, I left the hashed-out print hit here to describe what this segment of the code is and removing code that might be reintroduced in a later revision would be of no real benefit.
+   
    ![alt text](https://github.com/20035957/Joshua-Hardy-Pygame/blob/main/images/fig8.png?raw=true)
+   
    fig8. Again, pygame template is not broken so don’t fix it, this also allows for easier alteration when following official pygame documentation.
 
 ## 8. Final Source Code
