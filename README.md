@@ -1,6 +1,6 @@
 # Shooter By Joshua Hardy
 
-A small script made too show of Python and Pygame for my Application Scripting Class.
+A small script made to show of Python and Pygame for my Application Scripting Class.
 
 ## Table of Contents
 
@@ -12,8 +12,12 @@ A small script made too show of Python and Pygame for my Application Scripting C
  6. Logical View of the code 
  7. Screenshots of the code within context to the design decision. 
  8. Final Source Code 
+ 9. Versioning Model
+ 10. Authors
+ 11. License
+ 12. Acknowledgments
  
-## Revision History 
+## 1. Revision History 
 Revision 0.0.8 - Code named - Keyboard 
 - Drawn shapes follows user input from keyboard 
 - Keyboard movement includes continued movement in 1 direction with speed control 
@@ -26,8 +30,11 @@ Revision 0.1.1 - Code named – Collision (Current Revision)
 - target sprite is added and loaded at random location 
 - player is assigned fire role, when mouse is clicked and player and target occupies the same area of the screen the target sprite is   “killed” (removed) and respawns in another random location 
 
-## Introduction
-## Design Goals
+## 2. Introduction
+
+This is a Technical document detailing the Python Code “Shooter” by Joshua Hardy. “Shooter” is a Simple Point and shoot game built upon the Pygame Library/Module, in this Document we will be covering.
+
+## 3. Design Goals
 ### Aims of this script. 
 
 This code is written with the intent of using Pygame python library Modules to demonstrate python's flexibility as a scripting language and its ability to quickly transition from one task too another through the import function of Modules. As stated, before this document uses the Pygame Library Modules too turn python into an efficiently written and altered gaming development platform. 
@@ -36,7 +43,7 @@ This code is written with the intent of using Pygame python library Modules to d
 
 The design priorities were to keep everything as simple as possible by only using standard & simple Python Syntax and as little python Modules as possible. The code was also designed with the intent of variability for not only human readability but also alteration.  
 
-## Requirements
+## 4. Requirements
 
 “Shooter” is written in Python it is not compiled and is simply just a Script so in order to be run Python “binaries” must be present and called to run the script.  The script itself uses very few Python Modules as of (revision 0.0.3a) it only imports 2 modules “Sys” and “Pygame”, These modules must also be installed before the script is installed. I have included a requirements.txt alongside the script that can be run by python's pip binary too install the required modules.
 
@@ -73,7 +80,7 @@ The design priorities were to keep everything as simple as possible by only usin
      In the lower left you will see an “install” button click on it and a dialogue box will appear and install pygame for you, 
      when it finishes you will have successfully installed pygame. 
 
-## Pseudo Code 
+## 5. Pseudo Code 
 
     Player 1’s sprite is loaded from a file named player1.png 
     Player 1’s variable coordinates equal X 100 and Y 100 
@@ -101,15 +108,15 @@ The design priorities were to keep everything as simple as possible by only usin
        Target sprite will have a random new coordinate set 
             and fireLock will be set back too 0 
 
-## Logical View
+## 6. Logical View
 
    Insert Image Here
   
-## Screenshots with Context
+## 7. Screenshots with Context
 
    Insert Images here
 
-## Final Source Code
+## 8. Final Source Code
 
     import pygame
     import sys
@@ -169,19 +176,22 @@ The design priorities were to keep everything as simple as possible by only usin
     pygame.quit()
     sys.exit()
 
-## Versioning
+## 9. Versioning Model
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-## Author
+## 10. Authors
 
-* **Joshua Hardy** - [20035957](https://github.com/20035957)
+* **Joshua Hardy**    - [20035957](https://github.com/20035957)
+* **Pygame Dev Team** - [pygame](https://github.com/pygame/pygame)
 
-## License
+## 11. License
 
-This project is licensed under the GNU General Public License v2.0 - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU LGPL version 2.1 - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+## 12. Acknowledgments
 
 * My Lectures
 * My Classmates
+* The Python Development Team
+* The Pygame Development Team
