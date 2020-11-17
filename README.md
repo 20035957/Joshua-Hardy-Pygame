@@ -110,7 +110,7 @@ The design priorities were to keep everything as simple as possible by only usin
 
 ## 6. Logical View
 
-   Insert Image Here
+   ![alt text](https://github.com/20035957/Joshua-Hardy-Pygame/blob/main/images/entirecode.png?raw=true)
   
 ## 7. Screenshots with Context
 
